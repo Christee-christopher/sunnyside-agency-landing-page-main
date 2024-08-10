@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+body{
+    min-width: 320px;
+    min-height: 100vh;
+}
+.Header-container{
+    background: url(./images/desktop/image-header.jpg) no-repeat center/cover;
+    height: 300px;
+}
+.logo-navigation {
+    display: flex;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+}
+.navigation-botton {
+    display: inherit;
+    gap: 20px;
+    padding: 10px;
+}
+
+.navigation {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    gap: 10px; 
+    transition: all 0.5s; 
+}
+.icon-writeup{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+}
+.creative-writeup {
+    color: hsl(0, 0%, 100%);
+     padding: 10px; 
+    /* text-align: center; */
+    
+}
+.navigation:hover {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(212, 27%, 19%);
+    padding: 10px;
+    border-radius: 20px;
+}
+.main-container-about{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+    
+}
+.About-card-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    
+}
+.card1{
+    background-color: hsl(0, 0%, 100%) ;
+    width: 100%;
+    padding: 20px;
+    /* min-width: 320px; */
+    display: flex;
+    flex-direction: column;
+}
+.text-image-wrap{
+    display: flex;
+    width: 100%;
+}
+.text-heading{
+    text-align: center;
+    font-size: bold;
+    padding: 10px;
+}
+.description{
+    width: fit-content;
+    padding: 20px;
+}
+.learn-more{
+    border: none;
+    font-size: 16px;
+}
+
+.egg-image{
+    width: 50%;
+}
+.cup-image{
+    width: 50%;
+}
+.services-content{
+    display: flex;
+    flex-direction: row;
+
+}
+.graphic-design{
+    background: url(./images/desktop/image-graphic-design.jpg) no-repeat;
+    width: 100%;
+    
+
+ } 
+
+ .Photography{
+    background:url(./images/desktop/image-photography.jpg);
+    width: 100%;
+ }
+
+
+
+
+
+
+
