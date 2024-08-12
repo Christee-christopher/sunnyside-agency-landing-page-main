@@ -1,0 +1,250 @@
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+nav {
+    position: absolute;
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    width: 100%;
+
+}
+
+.navigation {
+    text-decoration: none;
+    padding: 10px;
+    transition: all 0.5s;
+    gap: 10px;
+    color: hsl(0, 0%, 100%);
+}
+
+.navigation:hover {
+    color: hsl(212, 27%, 19%);
+    border-radius: 10px;
+
+}
+
+header {
+    background: url(./images/desktop/image-header.jpg) no-repeat center/cover;
+    width: 100%;
+    height: 100vh;
+
+}
+
+.icon-creative-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    align-items: center;
+    gap: 40px;
+    translate: 0 10rem;
+    color: hsl(0, 0%, 100%);
+
+}
+
+.main-container img {
+    width: 100%;
+}
+
+.article-wrapper {
+    background-color: hsl(0, 0%, 100%);
+    padding: 20px;
+    display: grid;
+    place-items: center;
+}
+
+.article-wrapper>div {
+    max-width: 320px;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    z-index: 2;
+    color: hsl(212, 27%, 19%);
+}
+
+.article-wrapper h4 {
+    font-size: 28px;
+}
+
+.article-wrapper p {
+    text-align: justify;
+}
+
+.learn-more-wrapper {
+    position: relative;
+    width: fit-content;
+}
+
+.learn-more-wrapper button {
+    width: fit-content;
+    padding: 2px 0;
+    border: 0;
+    background-color: transparent;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.hightlight {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 8px;
+    transition: all 500ms;
+    z-index: -1;
+}
+
+.learn-more-wrapper:hover .hightlight {
+    background-color: yellow;
+}
+
+.learn-more-wrapper:hover .hightlight-two {
+    background-color: red !important;
+}
+
+.creative-card {
+    min-height: 500px;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 30px;
+}
+
+.creative-card h4 {
+    font-size: 28px;
+}
+
+.creative-card p {
+    text-align: center;
+    font-size: 18px;
+    max-width: 320px;
+}
+
+.graphics-card {
+    background: url(./images/desktop/image-graphic-design.jpg) no-repeat center;
+    color: hsl(167, 40%, 24%);
+    
+}
+
+.photography-card {
+    background: url(./images/desktop/image-photography.jpg) no-repeat center;
+    color: hsl(198, 62%, 26%);
+}
+
+.client-testimonial,
+.testimonial-card-wrapper {
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(0, 0%, 100%);
+    gap: 20px;
+    align-items: center;
+    padding-bottom: 60px;
+}
+
+.client-testimonial h4 {
+    padding-top: 80px;
+    padding-bottom: 20px;
+    text-align: center;
+    text-overflow: clip;
+    color: hsla(210, 9%, 39%, 0.699);
+}
+
+.testimonial-card {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 345px;
+
+}
+
+.testimonial-img {
+    border-radius: 100%;
+    width: 40px;
+    align-items: center;
+}
+
+.testimonial-card p {
+    text-align: center;
+    padding: 20px 0;
+    color: hsl(213, 9%, 39%);
+}
+
+.testimonial-card h5 {
+    color: hsl(212, 27%, 19%);
+}
+
+.testimonial-card small {
+    color: hsl(210, 4%, 67%);
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+footer {
+    background-color: hsl(168, 34%, 41%);
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    gap: 30px;
+    color: hsl(167, 40%, 24%);
+}
+
+.Sunnyside {
+    color: hsl(167, 40%, 24%);
+}
+
+.footer-nav {
+    display: flex;
+    gap: 30px;
+
+}
+
+.nav-footer {
+    color: hsl(167, 40%, 24%);
+    text-decoration: none;
+}
+
+.footer-navigation {
+    display: flex;
+    gap: 30px;
+    padding-top: 30px 0;
+}
+
+@media screen and (min-width: 800px) {
+    .main-container {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    .testimonial-card-wrapper {
+        flex-direction: row;
+    }
+    .projects {
+        grid-template-columns: auto auto auto auto;
+    }
+}
